@@ -1,4 +1,4 @@
-<h1 Align="Center">Em-Bomber</h1>
+<h1 Align="Center">Em-Bomber v1.0</h1>
 
 
 ### About Em-Bomber
