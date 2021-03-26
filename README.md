@@ -1,48 +1,32 @@
-<h1 Align="Center">Em-Bomber v1.0</h1>
+# Em-Bomber v1.1
+Bomb emails
 
+# Tested on
+- Termux
 
-### About Em-Bomber
-Em-Bomber is for send multiple emails at a time.
+# Installation
+* apt-get update -y
 
-### Screenshot
-![](Image.jpg)
+* apt-get upgrade -y
 
-### Em-Bomber is available for
-* Termux
+* pkg install python -y
 
-### Installation
-```
-$apt-get update -y
-```
-```
-$apt-get upgrade -y
-```
-```
-$pkg install python -y
-```
-```
-$pkg install python3 -y
-```
-```
-$pkg install git -y
-```
-```
-$git clone https://www.github.com/Cyber-Anonymous/Em-Bomber
-```
-```
-$ls
-```
-```
-$cd Em-Bomber
-```
-```
-$ls
-```
-```
-$python3 em-bomber.py
-```
-* Now you need internet connection.
-* You need to enable less secure app.
+* pkg install python3 -y
 
-### Warning
-**Em-Bomber is for only educational purpose. Don't use it any illegal. We are not responsible for any illegal activities.**
+* pip install requests
+
+* pkg install git -y
+
+* git clone https://github.com/Cyber-Anonymous/Em-Bomber
+
+* cd Em-Bomber
+
+* python3 em-bomber.py
+
+`Enable Less Secure Apps.`
+
+# Em-Bomber
+![](Image.png)
+
+# Warning
+***This tool is only for educational purpose. We are not responsible for any misuse or illegal activities.***
